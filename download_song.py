@@ -9,7 +9,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 import tempfile
 from yt_dlp import YoutubeDL
 
-from spotdl import Spotdl
+# from spotdl import Spotdl
 
 # Load environment variables from .env file
 load_dotenv()
@@ -46,7 +46,7 @@ cred = credentials.Certificate(
 BUCKET = "prueba-audio-494e7.appspot.com"
 app = firebase_admin.initialize_app(cred, {"storageBucket": BUCKET})
 db = firestore.client()
-spotdl_instance = Spotdl(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
+spotdl_instance = None# Spotdl(SPOTIFY_CLIENT_ID, SPOTIFY_CLIENT_SECRET)
 
 
 def get_spotify_client():
