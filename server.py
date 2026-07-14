@@ -18,6 +18,7 @@ origins = [
     "http://localhost",
     "http://localhost:8080",
     "http://localhost:3000",
+    "http://localhost:3001",
     "https://spotty-joly.web.app",
     "https://spotty-joly.firebaseapp.com",
     "https://prueba-audio-494e7.web.app",
